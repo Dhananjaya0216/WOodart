@@ -7,7 +7,7 @@
 .hero{
 	height:100vh;
 	width:100%;
-	background-image:url(background.jpg);
+	background-image:url(back.png);
 	
 	background-size:cover;
 	background-position:center;
@@ -49,5 +49,61 @@ nav ul li a{
 	color:white;
 	text-decoration:none;
 	font-weight:bold;
+	text-transform:capitalize;
 
+}
+nav ul li a:hover{
+	color:#f9004d;
+	transition:.4s;
+}
+.btn{
+	background-color:#f9004d;
+	color:white;
+	text-decoration:none;
+	border:2px solid transparent;
+	font-weight:bold;
+	padding :10px 25px;
+	border-radius:30px;
+	transition:transform .4s;
+	
+
+}	
+.btn:hover{
+	transform:scale(1.2);
+}
+
+.mobnav ul li a{
+	color:aliceblue;
+	font-weight: bold;
+	text-decoration: none;
+	
+	
+}
+.mobnav{
+	visibility:hidden;
+}
+.mobnav ul li{
+	padding: 5px;
+	text-align: right;
+	
+}
+.mobnav ul {
+	position: absolute;
+	top: 10px;
+	left: 80%;
+}
+.mobnav span{
+	color:#fff ;
+	text-align: right;
+}
+@media screen and (max-width: 600px){
+	.mobnav ul li a{
+		visibility: visible;
+		
+	}
+	nav ul,a{
+		visibility: hidden;
+	}
+	
+	
 }
